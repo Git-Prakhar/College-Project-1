@@ -1,0 +1,504 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Montserrat";
+}
+
+/* Content */
+
+/* Background Image */
+
+#bgimg{
+    background-image: url(Image/AIRT1.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top:0;
+    transform: scale(1);
+    animation-name: imageAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+#imgcover{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.329);
+}
+
+/* Above Background */
+
+/* Top Content */
+
+#headcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10%;
+    position: relative;
+}
+
+#tophead{
+    height: 21vh;
+    width: 65vw;
+    background-color: #fff;
+    margin-top: 40;
+    border-left: 10px solid red;
+    border-right: 10px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#thbutton{
+    display: none;
+}
+
+#thpanel{
+    display: none;
+}
+
+#sponsorimg{
+    height: 8vh;
+    width: 40vw;
+    background-image: url(); /*Sponsor Images*/
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#headbuttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20;
+}
+
+#headbuttons a{
+    text-decoration: none;
+    color:rgb(128, 128, 128);
+    font-size: 15px;
+    margin-left: 20;
+}
+
+#cfp{
+    display: flex;
+}
+
+.hbutton{
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30%;
+}
+
+#arrowicon{
+    width: 10px;
+    height: 10px;
+    background-image: url(Image/down-arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5;
+    margin-top: 5;
+}
+
+.hbicon{
+    width: 15px;
+    height: 15px;
+    background-image: url(Image/arrow-up.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: -60;
+    opacity: 0;
+    transition: opacity 0.5s, margin-bottom 0.3s;
+}
+
+#headtext{
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 25px;
+    line-height: 55px;
+    margin-top: 90;
+}
+
+#hytext{
+    font-size: 19px;
+    font-weight: bold;
+    color:white; 
+    text-align: center;
+}
+
+#hmtext{
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 50%;
+}
+
+.hmcenter{
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    color:white;
+    font-weight: 600;
+    column-gap: 1%;
+    text-align: center;
+}
+
+.hmimg{
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#hdtext{
+    width: 170px;
+}
+
+#hltext{
+    width: 310px;
+}
+
+#locimg{
+    height: 20px;
+    width: 25px;
+    background-image: url(Image/location.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#hltop{
+    display: flex;
+    justify-content: center;
+}
+
+#hftext{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight:600;
+    margin-top: 30;
+}
+
+/* Mid Content */
+
+#midcontent{
+    position: relative;
+    z-index: 2;
+    margin-top: 10%;
+}
+
+#midhead{
+    height: 200px;
+    background-color: rgb(255, 47, 47);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top: 300;
+}
+
+.dtop{
+    font-size: 25px;
+    font-weight: 550;
+}
+
+#midmain{
+    height: 850px;  
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2%;
+}
+
+#midmain h1{
+    font-size: 40px;
+    color: rgb(60, 57, 57);
+}
+
+#conandimg{
+    display: flex;
+    justify-content: center;
+    column-gap: 2%;
+}
+
+#con{
+    text-align: left;
+    width: 800px;
+    line-height: 2.5;
+    color: rgb(112, 105, 105);
+    font-size: 17px;
+}
+
+#conimg{
+    width: 500px;
+    height: 333px;
+    background-image: url(Image/acropolis-institute-of-technology-research-indore-217699.jpg);
+    border:2px solid black;
+    background-position: center;
+    box-shadow: 0 0 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#whenandwhere{
+    display: flex;
+    justify-content: center;
+    column-gap: 20%;
+}
+
+.waw{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    row-gap: 5%;
+}
+
+.wawtop{
+    font-weight: bold;
+    color: rgb(60, 57, 57);
+}
+
+.wawbot{
+    color: rgb(112, 105, 105);
+}
+
+.wawicon{
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+#note{
+    margin-left: 13.5%;
+    text-align: left;
+    font-weight: 500;
+    color: rgb(87, 87, 87);
+    margin-top: 50;
+}
+
+#mfimg{
+    height: 200px;
+    background-image: url(Image/slider-51.jpg);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mfcon{
+    width: 70%;
+    height: 60%;
+    background-color: rgb(255, 47, 47);
+    color:white;
+    display: flex;
+    align-items: center;
+    column-gap: 20%;
+}
+
+#mftext1{
+    font-size: 27px;
+    font-weight: bold;
+    margin-left: 50;
+}
+
+#mftext2{
+    color:gray;
+}
+
+/* Footer */
+
+#fbg{
+    height: 150px;
+    background-image: url(Image/bg-footer.png);
+    background-size: 90%;
+    background-color: #3F3836;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20%;
+}
+
+#fbg hr{
+    width: 60vw;
+    margin-top: 10;
+    border-color: rgb(148, 145, 145);
+}
+
+#fbot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30%;
+    margin-bottom: -30;
+    width: 100%;
+}
+
+#ftext{
+    width: 210px;
+    color: rgb(148, 145, 145);
+}
+
+#footbuttons{
+    display: flex;
+    column-gap: 4%;
+}
+
+.buticons{
+    height: 45px;
+    width: 45px;
+    background-color: #2d2a29;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+}
+
+.butimg{
+    height: 35%;
+    width: 35%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#cfpdropdown{
+    background-color: white;
+    width: 250px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.37);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    position:absolute;
+    top:210;
+    left:750;
+    opacity: 0;
+    transition: opacity 0.5s, height 0.3s;
+}
+
+#cfptext{
+    margin-left: 20;
+    display: none;
+    transition: height 0.5s;
+}
+
+#cfpdropdown a{
+    text-decoration: none;
+    color: rgb(110, 109, 109);
+}
+
+.buticons:hover{
+    background-color: rgb(255, 47, 47);
+}
+
+#regis1icon{
+    width: 30px;
+    height: 30px;
+    background-image: url(Image/icons8-next-page-50.png);
+    background-size: contain;
+}
+
+#register1{
+    position: fixed;
+    z-index: 90;
+    bottom: 20px;
+    left:20px;
+    width: 250px;
+    height: 50px;
+    background-color: rgba(255, 47, 47);
+    border:2px solid #2d2a29;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+#regis1button{
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5%;
+    font-size: 25px;
+    font-weight: 500;
+    color:white;
+    letter-spacing: 3px;
+}
+
+#regis1open{
+    position: fixed;
+    z-index: 90;
+    width: 250px;
+    height: 0px;
+    background-color: #fff;
+    bottom: 70px;
+    left:20px;
+    border:2px solid #2d2a29;
+    border-radius: 10px;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#regis1open hr{
+    width: 100px;
+}
+
+#regis1scan{
+    width: 200px;
+    height: 200px;
+    background-image: url(scanqr.jpg);
+    background-size: contain;
+}
+
+#regis1open a{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#regis1icon{
+    transition: 0.5s;
+}
+
+#mobileitems{
+    display: none;
+}
+
+#registerMobile{
+    display: none;
+}
+
+@keyframes imageAnim{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
